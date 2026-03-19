@@ -1,0 +1,124 @@
+.container {
+  padding: 20px;
+  padding-bottom: 100px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* List */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Card */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  padding: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
+
+/* Question */
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.icon {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Answer animation wrapper */
+.answerWrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+/* Answer */
+.answer {
+   margin-top: 12px;
+  padding: 14px 16px;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: #2d2d2d; /* soft dark instead of pure black */
+  background: #f8fafc; /* light subtle bg */
+
+  border-radius: 10px;
+  border: 1px solid #e6eaf0;
+
+  letter-spacing: 0.3px; /* reduce eye strain */
+}
+
+/* Active state */
+.active {
+  .answerWrapper {
+    max-height: 3000px;
+  }
+}
+
+/* Bottom Menu */
+.bottomMenu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  backdrop-filter: blur(12px);
+  background: rgba(15, 23, 42, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.bottomMenu::-webkit-scrollbar {
+  height: 1px;
+}
+
+/* Tabs */
+.tab {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+/* Active Tab */
+.activeTab {
+  color: #38bdf8;
+  border-bottom: 2px solid #38bdf8;
+  font-weight: 600;
+}
+.nodata{
+   background: rgba(53, 69, 106, 0.95);
+}
