@@ -1,0 +1,99 @@
+You are an expert Next.js developer. Create a clean interview Q&A page with accordion-style answers.
+
+ROUTE: /interviewprep/[slug]/page.jsx
+
+REQUIREMENTS:
+- questions array with { id, question, answer } objects
+- click on question → answer toggle (open/close)
+- only one answer open at a time (accordion)
+- smooth height animation on open/close
+- question number badge on left
+- arrow icon rotates on open
+- slug se topic title show karo header me
+- back button to /interviewprep
+
+DESIGN:
+- clean white cards, reading-friendly
+- left colored border accent on open question
+- no dark theme needed, light only
+- mobile responsive
+- SCSS modules only, no tailwind
+- react-icons use karo (FiChevronDown, FiArrowLeft)
+
+DATA: hardcode 5 sample questions for nodejs topic
+
+OUTPUT: complete page.jsx + page.module.scss, no explanation
+
+
+
+////
+
+
+AWS.11:14 AMClaude responded: Yahan common HR + Technical interview questions hain based on your actual resume —Yahan common HR + Technical interview questions hain based on your actual resume —
+
+🔹 API Performance Improvements
+
+How did you achieve 30%+ API performance improvement?
+What tools/techniques did you use — indexing, caching, or query optimization?
+How do you identify a slow API in production?
+Redis caching kahan use kiya aur kyun?
+
+
+🔹 AWS / Lambda
+
+AWS Lambda pe kaisa kaam kiya? Koi real use case batao.
+Lambda cold start problem kaise handle ki?
+S3, EC2, Lambda mein se kab kya choose karte ho?
+Serverless vs traditional server — kab kya prefer karoge?
+
+
+🔹 React.js
+
+State management ke liye Redux use kiya ya Context API? Kyun?
+React performance optimize kaise karte ho? (memo, lazy loading, etc.)
+useEffect vs useLayoutEffect difference?
+
+
+🔹 Node.js / Express
+
+Event loop kaise kaam karta hai?
+Async/await vs Promises — kab kya prefer karte ho?
+Memory leak kaise detect aur fix kiya?
+
+
+🔹 GraphQL
+
+REST se GraphQL migration kyun kiya? Kya challenges aaye?
+Over-fetching aur under-fetching GraphQL mein kaise solve hota hai?
+N+1 problem kya hota hai aur kaise solve karte ho?
+
+
+🔹 Database (MongoDB / PostgreSQL)
+
+MongoDB aggregation pipeline ka real example do.
+Query time 40% kaise reduce kiya?
+SQL vs NoSQL — kab kya choose karoge?
+
+
+🔹 Authentication
+
+JWT vs OAuth2 difference aur use case?
+RBAC kaise implement kiya — real example?
+Token refresh strategy kya thi?
+
+
+🔹 Team / Leadership
+
+Junior developers ko kaise mentor kiya?
+Code review mein kya dekhte ho mainly?
+Kisi conflict ya disagreement ka example do team mein?
+
+
+🔹 HR / Behavioral
+
+Immediate joiner ho — reason for leaving last job?
+5 saal baad khud ko kahan dekhte ho?
+Koi tough production issue batao jo tune fix kiya?
+
+
+Kisi bhi topic pe mock answer banana ho toh bolo — prepare karwa dunga!

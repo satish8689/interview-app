@@ -137,7 +137,7 @@ const handleLogout = () => {
   useEffect(() => {
           const handleBeforeInstallPrompt = (e) => {
               e.preventDefault(); // Prevent automatic mini-infobar
-              setDeferredPrompt(e); // Save the event for later
+              // setDeferredPrompt(e); // Save the event for later
               setShowInstallPopup(true); // Show our custom install popup
           };
   
