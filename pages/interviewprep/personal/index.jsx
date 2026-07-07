@@ -81,14 +81,21 @@ Overall, I contribute not just as a developer but as a team player who ensures q
   {
     id: 5,
     question: 'Why leave your current company?',
-    answer: `Sir, my current company's main office is in Chennai. They asked me to relocate to Chennai, but I do not want to relocate. So I decided to look for a good opportunity in Indore itself where I can work long term.`,
+    answer: `Sir, my current company's main office is in Chennai. They asked me to relocate to Chennai, Chennai is too far from Indore, and I don't know anyone there. Bangalore is easier for me because I have a few friends there, so I won't have any problem relocating.
+    
+    
+    but I do not want to relocate. So I decided to look for a good opportunity in Indore itself where I can work long term.`,
   },
   {
     id: 6,
     question: 'Current CTC and expecting CTC',
     answer: `My current CTC is 17 LPA. I am expecting around 18–20 LPA, but I am open to discussion based on the role, responsibilities, and the company's budget. My main priority is to get the right job opportunity and grow with the organization.`,
   },
-
+{
+  id: 7,
+  question: 'How will you manage relocating to Bangalore?',
+  answer: `Yes, I'm comfortable relocating to Bangalore. I plan to move alone initially, so I'll stay in a PG or temporary accommodation after joining. Once I settle in, I'll look for a permanent place nearby. So, relocation won't be an issue for me, and I can manage it smoothly.`,
+},
   
 ];
 

@@ -7,7 +7,8 @@ import {
 } from 'react-icons/fi';
 import { 
   SiNodedotjs, SiReact, SiJavascript, 
-  SiTypescript, SiDocker 
+  SiTypescript, SiDocker, 
+  SiGraphql
 } from 'react-icons/si';
 
 const TOPICS = [
@@ -47,6 +48,18 @@ const TOPICS = [
     badgeColor: '#0F6E56',
     slug: 'nodejs',
   },
+  {
+  title: 'GraphQL',
+  badge: 'API',
+  count: '30+',
+  icon: <SiGraphql />,
+  accent: '#E535AB',
+  iconBg: '#FDE7F5',
+  iconColor: '#B3127D',
+  badgeBg: '#FDE7F5',
+  badgeColor: '#B3127D',
+  slug: 'graphql',
+},
   {
     title: 'React.js',
     badge: 'Frontend',
