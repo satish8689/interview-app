@@ -253,18 +253,18 @@ export default function NodeJsQA() {
     <div className={styles.page}>
       <div className={styles.container}>
 
-        <Link href="/interviewprep" className={styles.back}>
+        <Link href="/" className={styles.back}>
           <FiArrowLeft size={15} />
           Back
         </Link>
 
-        <div className={styles.header}>
+        {/* <div className={styles.header}>
           <span className={styles.headerEyebrow}>Interview preparation</span>
-          <h1 className={styles.headerTitle}>Node.js — Event Loop &amp; Concurrency</h1>
+          <h1 className={styles.headerTitle}>React.js — </h1>
           <p className={styles.headerSub}>
             {QUESTIONS.length} questions — click to reveal answers
           </p>
-        </div>
+        </div> */}
 
         <div className={styles.list}>
           {QUESTIONS.map((q) => (

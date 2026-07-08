@@ -8,7 +8,8 @@ import {
 import { 
   SiNodedotjs, SiReact, SiJavascript, 
   SiTypescript, SiDocker, 
-  SiGraphql
+  SiGraphql,
+  SiBlueprint
 } from 'react-icons/si';
 
 const TOPICS = [
@@ -36,6 +37,30 @@ const TOPICS = [
     badgeColor: '#72243E',
     slug: 'personal',
   },
+  {
+    title: 'JavaScript',
+    badge: 'Core JS',
+    count: '60+',
+    icon: <SiJavascript />,
+    accent: '#FAC775',
+    iconBg: '#FAEEDA',
+    iconColor: '#633806',
+    badgeBg: '#FAEEDA',
+    badgeColor: '#633806',
+    slug: 'javascript',
+  },
+  {
+    title: 'TypeScript',
+    badge: 'Typed JS',
+    count: '25+',
+    icon: <SiTypescript />,
+    accent: '#7F77DD',
+    iconBg: '#EEEDFE',
+    iconColor: '#3C3489',
+    badgeBg: '#EEEDFE',
+    badgeColor: '#3C3489',
+    slug: 'typescript',
+  }, 
   {
     title: 'Node.js',
     badge: 'Backend',
@@ -96,30 +121,19 @@ const TOPICS = [
     badgeColor: '#993C1D',
     slug: 'aws',
   },
-  {
-    title: 'JavaScript',
-    badge: 'Core JS',
-    count: '60+',
-    icon: <SiJavascript />,
-    accent: '#FAC775',
-    iconBg: '#FAEEDA',
-    iconColor: '#633806',
-    badgeBg: '#FAEEDA',
-    badgeColor: '#633806',
-    slug: 'javascript',
-  },
-  {
-    title: 'TypeScript',
-    badge: 'Typed JS',
-    count: '25+',
-    icon: <SiTypescript />,
-    accent: '#7F77DD',
-    iconBg: '#EEEDFE',
-    iconColor: '#3C3489',
-    badgeBg: '#EEEDFE',
-    badgeColor: '#3C3489',
-    slug: 'typescript',
-  },  
+ {
+  title: 'Architecture',
+  badge: 'System Design',
+  count: '30+',
+  icon: <SiBlueprint />,
+  accent: '#7C8CFF',
+  iconBg: '#E8EBFF',
+  iconColor: '#2F3F9F',
+  badgeBg: '#E8EBFF',
+  badgeColor: '#2F3F9F',
+  slug: 'architecture',
+},
+   
   {
     title: 'Docker & CI/CD',
     badge: 'DevOps',

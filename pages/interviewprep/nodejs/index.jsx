@@ -451,7 +451,7 @@ export default function NodeJsQA() {
     <div className={styles.page}>
       <div className={styles.container}>
 
-        <Link href="/interviewprep" className={styles.back}>
+        <Link href="/" className={styles.back}>
           <FiArrowLeft size={15} />
           Back
         </Link>
