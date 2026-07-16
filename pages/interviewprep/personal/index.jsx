@@ -51,6 +51,42 @@ Overall, this project gave me strong hands-on experience in high-traffic systems
   },
   {
     id: 3,
+    question: 'What new things did you learn from the Reading Cinemas project?',
+    answer: `The Reading Cinemas project gave me a lot of practical, real-world experience — especially in the areas of high-traffic systems and third-party integrations.
+
+Key learnings:
+
+- Third-Party API Integration — Working with the Vista API taught me how to handle external, less-documented APIs — understanding their response structures, handling edge cases, and designing proper fallback mechanisms for failures.
+
+- Concurrency Handling — While implementing the seat locking mechanism, I applied concepts of race conditions and data consistency in practice, ensuring the same seat couldn't be booked by two users simultaneously.
+
+- Dynamic Data Handling — To manage seat layouts that changed by cinema and by day, I learned to design flexible, schema-agnostic data structures instead of hardcoding layout logic.
+
+- Payment & Failure Recovery — Integrating multiple payment methods (Google Pay, Credit Cards, reward points) gave me real-world experience with transaction failure recovery and idempotency handling.
+
+- Scalability Mindset — Working with AWS Lambda gave me hands-on experience with serverless architecture, and helped me understand how systems scale during peak load (like weekend releases).
+
+Overall, this project gave me the confidence to deliver complex, real-time, high-traffic systems at a production-grade quality. Thank you.`,
+  },
+  {
+    id: 4,
+    question: 'What challenges did you face in the Reading Cinemas project?',
+    answer: `The biggest challenge was integrating with the Vista API, since it was a third-party, cinema-industry-specific API with fairly limited documentation.
+
+Major challenges:
+
+- Vista API Response Handling — The structure of Vista API responses was quite complex and not always consistent — sometimes nested data would be missing or the format would differ. To handle this, I built robust parsing logic and proper error handling so that any unexpected response wouldn't crash the UI.
+
+- Seat Layout Complexity — The seat layout was quite difficult because it wasn't a fixed grid — different halls had different seat arrangements (recliners, couple seats, wheelchair-accessible seats, etc.), and the layout would even change day-wise (same hall, different configuration for different show timings). To handle this, I implemented dynamic seat-mapping logic that rendered based on real-time layout data coming from Vista, instead of a hardcoded structure.
+
+- Real-time Seat Locking — When multiple users were selecting seats for the same show simultaneously, maintaining data consistency and avoiding double-booking was quite tricky, especially when the Vista API response was a bit slow.
+
+- Data Sync Issues — At times, the seat availability data coming from Vista would get slightly out of sync with our system's local state, for which I added periodic sync and fallback refresh logic.
+
+Solving all these challenges taught me how important defensive coding, proper logging, and graceful degradation are when working with unpredictable third-party APIs. Thank you.`,
+  },
+  {
+    id: 3,
     question: 'What are your roles and responsibilities?',
     answer: `Currently I work as a Full Stack Developer with hands-on experience in React.js, Node.js, and AWS Lambda.
 

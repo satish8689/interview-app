@@ -122,13 +122,13 @@ In the browser, we register one using element.addEventListener('click', handlerF
   {
     id: 19,
     question: 'What is the Event Loop in Node.js?',
-    answer: `The Event Loop is what makes Node's async, non-blocking behavior possible even though JavaScript itself is single-threaded.
-
-Synchronous code runs first on the call stack. Anything async — timers, I/O, network calls — gets handed off to libuv. Once that work finishes, its callback goes into a queue.
-
-There are two types of queues — the microtask queue, which holds Promises and process.nextTick, and the macrotask queue, which holds setTimeout, setInterval, setImmediate, and I/O callbacks.
-
-The event loop keeps checking — once the call stack is empty, it first clears out all the microtasks, then moves on to the macrotasks. That's what gives Node its non-blocking, high-performance execution.`,
+    answer: `JavaScript is single-threaded, which means it can execute only one task at a time. Synchronous code is executed directly in the Call Stack.
+    
+    However, for asynchronous operations such as API calls, database queries, file reading, or timers, JavaScript does not execute them itself. Instead, it delegates these tasks to Browser APIs or Node.js's libuv.
+     
+     Once the asynchronous operation is completed, its callback is placed into a queue. If it's a Promise, the callback goes into the Microtask Queue. If it's a setTimeout, I/O operation, or another timer-related task, it goes into the Macrotask Queue. When the Call Stack becomes empty, the Event Loop first checks the Microtask Queue and executes all pending microtasks.
+     
+     After that, it processes tasks from the Macrotask Queue. This event-driven architecture allows JavaScript to remain non-blocking and efficiently handle thousands of concurrent requests, even though the language itself is single-threaded.`,
   },
   {
     id: 20,
